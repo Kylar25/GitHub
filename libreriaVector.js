@@ -1,7 +1,7 @@
 function vector (n,m){
     resultado = []
     for( let i = 0; i < n; i++){
-        let r = Math.random() * (20 - 0) + 0;
+        let r = Math.floor(Math.random() * (20 - 0) + 0);
         resultado.push(r)
     }
       return resultado
@@ -9,16 +9,7 @@ function vector (n,m){
 console.log(vector(6,8));
 
 
-function sumavector (v1,v2){
-    let r = []
-    if ( v1.lenght == v2.lenght){
-        for(let i = 0; i < v1.length; i++){
-            r[i] = v1[i]+v2[i]
-        }  
-    }
-    return r
-}
-console.log(sumavector ([2,3],[3,4]));
+
 
 
 function productovector(n,v){
