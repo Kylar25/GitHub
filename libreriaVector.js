@@ -9,16 +9,16 @@ function vector (n,m){
 console.log(vector(6,8));
 
 
-function sumavector (v1,v2){
+function sumavector (v1,v2, v3){
     let r = []
-    if ( v1.lenght == v2.lenght){
+    if ( v1.lenght == v2.lenght && v3.lenght == v1.lenght){
         for(let i = 0; i < v1.length; i++){
-            r[i] = v1[i]+v2[i]
+            r[i] = v1[i]+v2[i]+v3[i]
         }  
     }
     return r
 }
-console.log(sumavector ([2,3],[3,4]));
+console.log(sumavector ([2,3],[3,4], [4,5]));
 
 
 function productovector(n,v){
